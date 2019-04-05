@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Something's Missing</title>
+  </head>
+  <body>
+    <div class="info">
+      <div class="method">{{method}}</div>
+      <div class="route">{{route}}</div>
+    </div>
+    <div class="message">
+      This isn't the page you're looking for.
+    </div>
+    <script type="text/javascript">
+    console.log('For a list of available API endpoints, go here:');
+    console.log(window.location.origin + '/api');
+    </script>
+  </body>
+  <style media="screen">
+    html {
+      font-family: monospace;
+      font-size: 32px;
+      margin-top: 5%;
+      text-align: center;
+      background-color: #273642;
+      color: #d1eeff;
+    }
+    .info {
+      margin: 30px 0;
+    }
+    .method, .route {
+      display: inline-block;
+      font-size: 200%;
+      overflow-x: hidden;
+    }
+    .route {
+      font-weight: bold;
+      max-width: 75%;
+      text-overflow: ellipsis;
+    }
+  </style>
+</html>

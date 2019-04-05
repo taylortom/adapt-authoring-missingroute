@@ -1,0 +1,12 @@
+{
+  "name": "adapt-authoring-missingroute",
+  "version": "0.0.1",
+  "description": "Gives the user feedback when trying to access any unhandled routes",
+  "main": "index.js",
+  "adapt_authoring": {
+    "module": true
+  },
+  "dependencies": {
+    "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git"
+  }
+}
