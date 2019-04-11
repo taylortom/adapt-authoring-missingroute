@@ -4,39 +4,60 @@
     <title>Something's Missing</title>
   </head>
   <body>
-    <div class="info">
-      <div class="method">{{method}}</div>
-      <div class="route">{{route}}</div>
-    </div>
-    <div class="message">
-      This isn't the page you're looking for.
+    <div id="app">
+      <img width="115" height="123" src="https://www.adaptlearning.org/wp-content/uploads/2015/11/home-hero-logo.png" class="vc_single_image-img attachment-full" alt="">
+      <h1>This isn't the page you're looking for.</h1>
+      <div class="info">{{route}}</div>
+      <p>Try checking the URL for errors to be sure you're not in the wrong place.</p>
+      <a href="/">Return to the homepage</a>
     </div>
     <script type="text/javascript">
-    console.log('For a list of available API endpoints, go here:');
-    console.log(window.location.origin + '/api');
+      console.log('For a list of available API endpoints, go here:');
+      console.log(window.location.origin + '/api');
     </script>
   </body>
   <style media="screen">
     html {
-      font-family: monospace;
-      font-size: 32px;
-      margin-top: 5%;
+      background: url(https://www.adaptlearning.org/wp-content/uploads/2015/12/header_image.jpg?id=924);
+    }
+    #app {
+      margin: 0 auto;
+      margin-top: 10%;
+      width: 85%;
+      font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: white;
       text-align: center;
-      background-color: #273642;
-      color: #d1eeff;
+    }
+    h1 {
+      font-size: 300%;
+      font-weight: inherit;
     }
     .info {
-      margin: 30px 0;
-    }
-    .method, .route {
       display: inline-block;
-      font-size: 200%;
-      overflow-x: hidden;
+      padding: 10px;
+      margin-bottom: 25px;
+      background: rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,0.25); 
+      border-radius: 3px;
+      font-size: 150%;
     }
-    .route {
-      font-weight: bold;
-      max-width: 75%;
-      text-overflow: ellipsis;
+    a {
+      display: inline-block;
+      padding: 15px;
+      margin-top: 25px;
+      border: 1px solid white;
+      background: none;
+      font-family: inherit;
+      font-size: inherit;
+      text-decoration: none;
+      color: white;
+      transition: all 0.5s;
+    }
+    a:hover {
+      background: white;
+      color: #3dd0ea;
     }
   </style>
 </html>
