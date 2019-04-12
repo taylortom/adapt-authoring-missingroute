@@ -4,7 +4,11 @@
   "description": "Gives the user feedback when trying to access any unhandled routes",
   "main": "index.js",
   "adapt_authoring": {
-    "module": true
+    "module": true,
+    "documentation": {
+      "enable": true,
+      "include": "lib/*"
+    }
   },
   "dependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git"
